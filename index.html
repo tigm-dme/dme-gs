@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,49 +34,263 @@
     <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
     <![endif]-->
 </head>
+
 <body>
     <!-- HEADER
     ============================================================== -->
-    <header class="gs-header" role="banner">
-        <div class="navbar-wrapper">
-            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                            
-                        </button>
-                        <a href="/" class="navbar-brand">
-                            <img src="assets/img/ground-systems-logo.png" alt="Ground Systems">
+    <header class="gs-header" role="banner" style="background-color: black">
+        <nav class="gs-navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-2 offset-4 offset-md-0">
+                        <a class="navbar-brand" href="#" style="width:100%">
+                        <img src="assets/img/ground-systems-logo.png" alt="Ground Systems Logo">
                         </a>
-                    </div>
-                </div><!-- container -->
-            </div><!-- navbar -->
-        </div><!-- navbar-wrapper -->
+                    </div><!-- col -->
+                    <div class="col-2 col-md-1 offset-0 offset-md-9">
+                        <a href="#" class="search-icon">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div><!-- end col -->
+                </div><!-- row -->
+                <div class="row hidden-sm-down">
+                    <div class="col-12">
+                        <ul class="navbar-links">
+                            <li class="navbar-link active"><a href="index.html">Home</a></li>
+                            <li class="navbar-link"><a href="about.html">About</a></li>
+                            <li class="navbar-link"><a href="applications.html">Applications</a></li>
+                            <li class="navbar-link"><a href="portfolio.html">Portfolio</a></li>
+                            <li class="navbar-link"><a href="news.html">News</a></li>
+                            <li class="navbar-link"><a href="blog.html">Blog</a></li>
+                            <li class="navbar-link"><a href="publications.html">Publications</a></li>
+                            <li class="navbar-link"><a href="contacts.html">Contacts</a></li>
+                        </ul><!-- navbar-links -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- container -->
+        </nav><!-- nav -->
     </header><!-- header -->
+
     <!-- SLIDER
     ============================================================== -->
-    <section>
-    </section>
+    <section id="slider">
+        <ul class="owl-carousel">
+            <li class="carousel-image general">
+                <div class="ribbon col-10"></div>
+                <div class="container">
+                    <h1>Next Generation Ground Systems</h1>
+                </div>
+            </li>
+            <li class="carousel-image nextgeoss">
+                <div class="ribbon col-10"></div>
+                <div class="container">
+                    <h1>NextGEOSS - Contributing to GEOSS</h1>
+                </div>
+            </li>
+            <li class="carousel-image coresyf">
+                <div class="ribbon col-10"></div>
+                <div class="container">
+                    <h1>Co-ReSyF - collaboration framework</h1>
+                </div>
+            </li><!-- carousel-image -->
+        </ul><!-- owl-caousel -->
+    </section><!-- slider -->
+
     <!-- PROJECT CARDS
     ============================================================== -->
-    <section>
-        
-    </section>
+    <section id="projects-cards">
+        <ul class="row projects-list" style="list-style-type: none; margin:0;padding:0;">
+            <li class="col-6 col-md-4 project-card" style="background-color:red">
+                <article class="project-details">
+                    <img src="assets/img/NextGEOSS_especial_horizontal.png" alt="">
+                    <div>
+                        <p>
+                            GEOSS (Global Earth Observation System of Systems) is a central part of GEO’s Information System’s mission. The NextGEOSS project, a European contribution to GEOSS, proposes to develop the next generation centralised hub for Earth
+                            Observation data, where the users can connect to access data and deploy EO-based applications. The concept revolves around providing the data and resources to the users communities, together with Cloud resources, seamlessly
+                            connected to provide an integrated ecosystem for supporting applications. A central component of NextGEOSS is the strong emphasis put on engaging the communities of providers and users, and bridging the space in between. The
+                            project has a special focus on encouraging and stimulating data exploitation by businesses. Capacity building is at the heart of NextGEOSS and the project will identify training needs to encourage wider user-engagement with
+                            EO data and its commercial potential in the next 3,5 years.
+                        </p>
+                    </div>
+                    <a href="#" class="flat-button">learn more</a>
+                </article>
+            </li><!-- col -->
+            <li class="col-6 col-md-4 project-card" style="background-color:blue">
+                <article class="project-details">
+                    <img src="assets/img/coresyf-logo-white.png" alt="">
+                    <div>
+                        <p>
+                            The Co-ReSyF project will implement a dedicated data access and processing infrastructure, with automated tools, methods and standards to support research applications using Earth Observation (EO) data for monitoring of Coastal
+                            Waters, leveraging on the components deployed SenSyF. The main objective is to facilitate the access to Earth Observation data and pre-processing tools to the research community, towards the future provision of future Coastal
+                            Waters services based on EO data.
+                        </p>
+                    </div>
+                    <a href="#" class="flat-button">learn more</a>
+                </article>    
+            </li><!-- col -->
+            <li class="col-6 col-md-4 project-card" style="background-color:grey">
+                <article class="project-details">
+                    <img src="assets/img/simocean-logo.png" alt="">
+                    <div>
+                        <p>
+                            The SIMOcean project aggregates different observational, satellite and model ocean and other related (e.g. meteorological, atmospheric) datasets related to marine environment monitoring, associated human activities and their social,
+                            environmental and economic impact, currently managed by the Portuguese Sea and Atmosphere (IPMA) and the Hydrographic (Hidrográfico) Institutes, the main Portuguese data producers/providers of oceanic data. Those datasets will
+                            be integrated in the SIMOcean system to provide value added services for sea state prediction and monitoring, in particular, related to sea wave propagation, ocean circulation dynamics and atmosphere/ocean interaction processes.
+                        </p>
+                    </div>
+                    <a href="#" class="flat-button">learn more</a>
+                </article>    
+            </li><!-- col -->
+            <li class="col-6 col-md-4 project-card" style="background-color:yellow">
+                <article class="project-details">
+                    <img src="assets/img/cheops-logo.png" alt="">
+                    <div>
+                        <p>
+                            The SOC Data Archive &amp; Dissemination is in charge of the archiving, storage and inventory function of mission data and products along with the dissemination functionalities for the mission users. The identified main functions
+                            are as follows: </p>
+                        <ul>
+                            <li>Archiving of mission data files from several levels</li>
+                            <li>Catalogue of mission data files. The system shall include an access service intended to retrieval data files and metadata from/to the other components</li>
+                            <li>Data distribution mechanism able to deliver data according to different user profiles (including browsing capabilities)</li>
+                            <li>To provide an interface that gives access to the capabilities needed for the administration of the system</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="flat-button">learn more</a>
+                </article>    
+            </li><!-- col -->
+            <li class="col-6 col-md-4 project-card" style="background-color:magenta">
+                <article class="project-details">
+                    <img src="assets/img/cheops-logo.png" alt="">
+                    <div>
+                        <p>
+                            The E-GEM project proposes to evolve the current status of GNSS Reflectometry (GNSS-R) methods for the purpose of Earth monitoring, paving the way for operational applications. Three experimental platforms will be developed for
+                            GNSS-R data acquisition: a space-borne, an airborne and a ground instrument will acquire large amounts of data to support the development of algorithms and the definition of new data products and services.
+                        </p>
+                    </div>
+                    <a href="#" class="flat-button">learn more</a>
+                </article>    
+            </li><!-- col -->
+            <li class="col-6 col-md-4 project-card" style="background-color:orange">
+                <article class="project-details">
+                    <img src="assets/img/cheops-logo.png" alt="">
+                    <div>
+                        <p>
+                            Glovisat is a generic multi-mission earth observation product visualization platform that allow a fast and simple access to information by the final user. Therefore in the future there is no need to build a specific visualization
+                            tool from scratch for every project, product or service. To build a specific service the Glovisat platform can be used as basis. Proper plugins and extensions will need to be developed to satisfy the specific service requirements
+                            (new user requirements).
+                        </p>
+                    </div>
+                    <a href="#" class="flat-button">learn more</a>
+                </article>    
+            </li><!-- col -->
+        </ul><!-- row -->
+    </section><!-- projects-cards -->
+
     <!-- ABOUT US
     ============================================================== -->
-    <section>
+    <section id="about-us">
+        <div class="container">
+            <h1 class="section-header">About Us</h1>
+            <div class="row">
+                <div class="col-12 col-md-4 section-text">
+                    <p class="secondary-dark-text">
+                        We provide high-technology engineering solutions, as well as information systems, products and services of maximum quality, innovation and added value to our customers.
+                    </p>
+                </div><!-- end col -->
+                <div class="col-12 col-md-8 section-icons">
+                    <ul class="row">
+                        <li class="col-6 col-md-3">
+                            <div class="icon-wrapper">
+                                <i class="icon-r"></i>
+                            </div>
+                            <p class="icon-description"><strong>Mission Support</strong></p>
+                        </li>
+                        <li class="col-6 col-md-3">
+                            <div class="icon-wrapper">
+                                <i class="icon-e"></i>
+                            </div>
+                            <p class="icon-description"><strong>Satellite Control Systems</strong></p>
+                        </li>
+                        <li class="col-6 col-md-3">
+                            <div class="icon-wrapper">
+                                <i class="icon-c"></i>
+                            </div>
+                            <p class="icon-description"><strong>Instrument Processing</strong></p>
+                        </li>
+                        <li class="col-6 col-md-3">
+                            <div class="icon-wrapper">
+                                <i class="icon-s"></i>
+                            </div>
+                            <p class="icon-description"><strong>Archive and Catalogue</strong></p>
+                        </li>
+                    </ul><!-- end row -->
+                </div><!-- end col -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </section><!-- about-us -->
 
-    </section>
-    <!-- TOOLS AND SERVICE
+    <!-- PARALLAX
     ============================================================== -->
-    <section></section>
+    <section class="parallax" data-type="background" data-speed="5"></section>
+
+    <!-- TOOLS AND SERVICES
+    ============================================================== -->
+    <section id="tools-services">
+        <div class="container">
+            <h1 class="section-header">Tools &amp; Services</h1>
+            <div class="row">
+               <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="col-12 section-text">
+                            <p class="secondary-dark-text text-break">We have developed a set of tools that support the space and EO community.</p>
+                            <p class="secondary-dark-text bottom-20px"> We also provide real time altimetric data using innovative GNSS Reflectometry technology.</p>
+                        </div>
+                    </div>
+                    <ul class="row section-icons">
+                        <li class="col-6">
+                            <div class="icon-wrapper">
+                                <i class="icon-sh"></i>
+                            </div>
+                            <p class="icon-description"><strong>Maritime Surveillance</strong></p>
+                        </li>
+                        <li class="col-6">
+                            <div class="icon-wrapper">
+                                <i class="icon-e"></i>
+                            </div>
+                            <p class="icon-description"><strong>EO Data Visualization</strong></p>
+                        </li>
+                        <li class="col-6">
+                            <div class="icon-wrapper">
+                                <i class="icon-c"></i>
+                            </div>
+                            <p class="icon-description"><strong>Cloud Infrastructure</strong></p>
+                        </li>
+                        <li class="col-6">
+                            <div class="icon-wrapper">
+                                <i class="icon-wf"></i>
+                            </div>
+                            <p class="icon-description"><strong>Workflow Managers</strong></p>
+                        </li>
+                    </ul>
+               </div><!-- end col -->
+               <div class="col-8 col-md-7 offset-2 offset-md-1">
+                    <img src="assets/img/simocean-portal-mockup.jpg" alt="SIMOcean Geoportal Mockup">
+               </div><!-- end col -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </section><!-- tools-services -->
+
+    <!-- PARALLAX
+    ============================================================== -->
+    <section class="parallax" data-type="background" data-speed="5"></section>
 
     <!-- BACKGROUND AND EXPERTSE
     ============================================================== -->
-    <section>  </section>
+    <section> </section>
+
+    <!-- PARALLAX
+    ============================================================== -->
+    <section class="parallax" data-type="background" data-speed="5"></section>
 
     <!-- CUSTOMERS AND PARTNERS
     ============================================================== -->
@@ -88,13 +303,15 @@
     <!-- MODAL
     ============================================================== -->
     <div>
-        
+
     </div>
 
     <!-- JAVASCRIPT
     ============================================================== -->
     <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
